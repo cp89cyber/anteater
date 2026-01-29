@@ -57,10 +57,12 @@ require habitat.html 'id="habitat-zones"'
 require diet.html 'id="diet-menu"'
 require conservation.html 'id="help-actions"'
 
-require index.html 'data-page="home"'
-require species.html 'data-page="species"'
-require habitat.html 'data-page="habitat"'
-require diet.html 'data-page="diet"'
-require conservation.html 'data-page="conservation"'
+require styles.css ':root'
+require styles.css '\.site-header'
+require styles.css '\.site-footer'
+require styles.css '\.hero'
+require styles.css '\.card-grid'
+require styles.css '@media'
+require styles.css 'prefers-reduced-motion'
 
 echo "Smoke test passed."
