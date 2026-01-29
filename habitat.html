@@ -34,18 +34,51 @@
     </header>
 
     <main id="main-content">
-      <section class="hero section">
+      <section class="hero section reveal">
         <div class="hero-content">
           <p class="eyebrow">Habitat</p>
           <h1>Where anteaters roam.</h1>
           <p>Forests, grasslands, and wetlands across the Americas.</p>
         </div>
-        <div class="hero-illustration" aria-hidden="true"></div>
+        <div class="hero-illustration" aria-hidden="true">
+          <div class="anteater-shape">
+            <span class="anteater-snout"></span>
+          </div>
+        </div>
       </section>
 
-      <section class="section">
-        <h2>Home zones</h2>
-        <p class="lead">They follow the insect trails wherever they go.</p>
+      <section class="section reveal" id="habitat-zones">
+        <div class="section-header">
+          <h2>Home zones</h2>
+          <p class="lead">They follow the insect trails wherever they go.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Tropical forests</h3>
+            <p>Warm and leafy, perfect for tree-climbing tamanduas and silky anteaters.</p>
+          </article>
+          <article class="card">
+            <h3>Savannas and grasslands</h3>
+            <p>Open spaces where giant anteaters roam and sniff out mounds.</p>
+          </article>
+          <article class="card">
+            <h3>Wetlands</h3>
+            <p>Moist, marshy areas with plenty of insects and soft ground.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-header">
+          <h2>Climate ladder</h2>
+          <p class="lead">Anteaters like warm places with lots of bugs.</p>
+        </div>
+        <div class="climate-bar" aria-hidden="true"></div>
+        <div class="climate-labels">
+          <span>Cool</span>
+          <span>Warm</span>
+          <span>Tropical</span>
+        </div>
       </section>
     </main>
 
@@ -56,6 +89,7 @@
           <li>They like warm, humid climates.</li>
           <li>Tree anteaters sleep in leafy nests.</li>
           <li>Ground anteaters wander long distances.</li>
+          <li>Habitats full of insects are their favorites.</li>
         </ul>
         <button class="btn btn-small" type="button" data-fact-button>Shuffle fact</button>
       </div>

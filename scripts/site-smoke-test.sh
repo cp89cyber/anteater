@@ -41,7 +41,6 @@ for page in index.html species.html habitat.html diet.html conservation.html; do
   require "$page" 'class="site-header"'
   require "$page" 'class="site-footer"'
   require "$page" 'class="hero'
-  require "$page" 'class="section"'
   require "$page" 'data-page="'
   require "$page" 'aria-current="page"'
   require "$page" 'Skip to main content'
@@ -50,5 +49,18 @@ for page in index.html species.html habitat.html diet.html conservation.html; do
   require "$page" 'data-fact-button'
   require "$page" 'class="fact-list"'
 done
+
+require index.html 'id="species-preview"'
+require index.html 'id="love-list"'
+require species.html 'id="species-cards"'
+require habitat.html 'id="habitat-zones"'
+require diet.html 'id="diet-menu"'
+require conservation.html 'id="help-actions"'
+
+require index.html 'data-page="home"'
+require species.html 'data-page="species"'
+require habitat.html 'data-page="habitat"'
+require diet.html 'data-page="diet"'
+require conservation.html 'data-page="conservation"'
 
 echo "Smoke test passed."
