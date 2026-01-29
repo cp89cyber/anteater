@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anteater Alley | Habitat</title>
+    <meta name="description" content="Discover where anteaters live and roam." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page" data-page="habitat">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <a class="logo" href="index.html" aria-label="Anteater Alley">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 48" role="presentation">
+            <circle cx="24" cy="24" r="16" />
+            <ellipse cx="48" cy="26" rx="14" ry="8" />
+            <circle cx="20" cy="22" r="2" />
+          </svg>
+        </span>
+        <span class="logo-text">Anteater Alley</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="species.html">Species</a>
+        <a class="nav-link is-active" href="habitat.html" aria-current="page">Habitat</a>
+        <a class="nav-link" href="diet.html">Diet</a>
+        <a class="nav-link" href="conservation.html">Conservation</a>
+      </nav>
+      <a class="btn btn-small" href="conservation.html">Adopt (Pretend)</a>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section reveal">
+        <div class="hero-content">
+          <p class="eyebrow">Habitat</p>
+          <h1>Where anteaters roam.</h1>
+          <p>Forests, grasslands, and wetlands across the Americas.</p>
+        </div>
+        <div class="hero-illustration" aria-hidden="true">
+          <div class="anteater-shape">
+            <span class="anteater-snout"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="habitat-zones">
+        <div class="section-header">
+          <h2>Home zones</h2>
+          <p class="lead">They follow the insect trails wherever they go.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Tropical forests</h3>
+            <p>Warm and leafy, perfect for tree-climbing tamanduas and silky anteaters.</p>
+          </article>
+          <article class="card">
+            <h3>Savannas and grasslands</h3>
+            <p>Open spaces where giant anteaters roam and sniff out mounds.</p>
+          </article>
+          <article class="card">
+            <h3>Wetlands</h3>
+            <p>Moist, marshy areas with plenty of insects and soft ground.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-header">
+          <h2>Climate ladder</h2>
+          <p class="lead">Anteaters like warm places with lots of bugs.</p>
+        </div>
+        <div class="climate-bar" aria-hidden="true"></div>
+        <div class="climate-labels">
+          <span>Cool</span>
+          <span>Warm</span>
+          <span>Tropical</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="facts-widget">
+        <p class="fact-text" data-fact-text>Anteaters can stand on their hind legs to sniff the air.</p>
+        <ul class="fact-list">
+          <li>They like warm, humid climates.</li>
+          <li>Tree anteaters sleep in leafy nests.</li>
+          <li>Ground anteaters wander long distances.</li>
+          <li>Habitats full of insects are their favorites.</li>
+        </ul>
+        <button class="btn btn-small" type="button" data-fact-button>Shuffle fact</button>
+      </div>
+      <p class="footer-note">Made for curious explorers.</p>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
