@@ -15,10 +15,16 @@ const factText = document.querySelector("[data-fact-text]");
 const factButton = document.querySelector("[data-fact-button]");
 
 if (factText && factButton) {
-  let lastIndex = 0;
+  let lastIndex = -1;
+  const currentFact = factText.textContent.trim();
+  const currentIndex = funFacts.indexOf(currentFact);
+  if (currentIndex >= 0) {
+    lastIndex = currentIndex;
+  }
+
   const pickFact = () => {
     let index = Math.floor(Math.random() * funFacts.length);
-    if (index === lastIndex) {
+    if (funFacts.length > 1 && index === lastIndex) {
       index = (index + 1) % funFacts.length;
     }
     lastIndex = index;
