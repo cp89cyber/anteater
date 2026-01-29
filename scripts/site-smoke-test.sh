@@ -58,11 +58,13 @@ require diet.html 'id="diet-menu"'
 require conservation.html 'id="help-actions"'
 
 require styles.css ':root'
-require styles.css '\.site-header'
-require styles.css '\.site-footer'
-require styles.css '\.hero'
-require styles.css '\.card-grid'
-require styles.css '@media'
-require styles.css 'prefers-reduced-motion'
+require styles.css '\.reveal'
+require styles.css '\.reveal\.is-visible'
+require styles.css '\.js'
+
+require main.js 'funFacts'
+require main.js 'IntersectionObserver'
+require main.js 'data-fact-text'
+require main.js 'data-fact-button'
 
 echo "Smoke test passed."

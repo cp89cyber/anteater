@@ -348,6 +348,10 @@ img {
   gap: 0.5rem;
 }
 
+.js .fact-list {
+  display: none;
+}
+
 .footer-note {
   text-align: center;
   font-weight: 700;
